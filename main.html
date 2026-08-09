@@ -1,270 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Rajnish Singh</title>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --border-color: #334155;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-blue: #38bdf8;
-            --accent-purple: #a78bfa;
-            --tag-bg: #1e293b;
-        }
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --border-color: #334155;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent-blue: #38bdf8;
+        --accent-purple: #a78bfa;
+        --tag-bg: #1e293b;
+      }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 2rem 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        margin: 0;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-        .portfolio-container {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 3rem;
-            max-width: 750px;
-            width: 100%;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            border: 1px solid var(--border-color);
-        }
+      .portfolio-container {
+        background-color: var(--card-bg);
+        border-radius: 16px;
+        padding: 3rem;
+        max-width: 750px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        border: 1px solid var(--border-color);
+      }
 
-        /* Header Section */
-        .header {
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 2rem;
-            margin-bottom: 2rem;
-        }
+      /* Header Section */
+      .header {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
 
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-            margin: 0 auto 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: white;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-        }
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--accent-blue),
+          var(--accent-purple)
+        );
+        margin: 0 auto 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+      }
 
-        h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            letter-spacing: -0.5px;
-        }
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        letter-spacing: -0.5px;
+      }
 
-        .title-sub {
-            color: var(--accent-blue);
-            font-weight: 600;
-            font-size: 1.05rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+      .title-sub {
+        color: var(--accent-blue);
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-        .location {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
+      .location {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+      }
 
-        /* Section Styling */
-        h2 {
-            color: var(--text-main);
-            font-size: 1.4rem;
-            border-left: 4px solid var(--accent-purple);
-            padding-left: 0.75rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
+      /* Section Styling */
+      h2 {
+        color: var(--text-main);
+        font-size: 1.4rem;
+        border-left: 4px solid var(--accent-purple);
+        padding-left: 0.75rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
 
-        p, li {
-            color: var(--text-muted);
-            line-height: 1.6;
-            font-size: 0.98rem;
-        }
+      p,
+      li {
+        color: var(--text-muted);
+        line-height: 1.6;
+        font-size: 0.98rem;
+      }
 
-        ul {
-            padding-left: 1.2rem;
-            margin: 0.5rem 0;
-        }
+      ul {
+        padding-left: 1.2rem;
+        margin: 0.5rem 0;
+      }
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+      li {
+        margin-bottom: 0.5rem;
+      }
 
-        /* Grid Framework for Projects/Experience */
-        .item-card {
-            background-color: #111827;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.25rem;
-            margin-bottom: 1rem;
-        }
+      /* Grid Framework for Projects/Experience */
+      .item-card {
+        background-color: #111827;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+      }
 
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.5rem;
-        }
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.5rem;
+      }
 
-        .item-title {
-            font-weight: 600;
-            color: var(--text-main);
-            font-size: 1.1rem;
-        }
+      .item-title {
+        font-weight: 600;
+        color: var(--text-main);
+        font-size: 1.1rem;
+      }
 
-        .item-tech {
-            font-size: 0.8rem;
-            color: var(--accent-blue);
-            font-family: monospace;
-            background-color: rgba(56, 189, 248, 0.1);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-        }
+      .item-tech {
+        font-size: 0.8rem;
+        color: var(--accent-blue);
+        font-family: monospace;
+        background-color: rgba(56, 189, 248, 0.1);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+      }
 
-        .item-date {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            white-space: nowrap;
-        }
+      .item-date {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        white-space: nowrap;
+      }
 
-        /* Badges / Tags */
-        .tag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
+      /* Badges / Tags */
+      .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
 
-        .tag {
-            background-color: #273549;
-            color: var(--text-main);
-            font-size: 0.8rem;
-            padding: 0.3rem 0.6rem;
-            border-radius: 4px;
-            border: 1px solid var(--border-color);
-        }
+      .tag {
+        background-color: #273549;
+        color: var(--text-main);
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        border: 1px solid var(--border-color);
+      }
 
-        /* Footer Links */
-        .links-flex {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2.5rem;
-        }
+      /* Footer Links */
+      .links-flex {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2.5rem;
+      }
 
-        .btn {
-            flex: 1;
-            text-align: center;
-            background-color: #273549;
-            color: var(--text-main);
-            text-decoration: none;
-            padding: 0.8rem;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: transform 0.2s, background-color 0.2s;
-            border: 1px solid var(--border-color);
-        }
+      .btn {
+        flex: 1;
+        text-align: center;
+        background-color: #273549;
+        color: var(--text-main);
+        text-decoration: none;
+        padding: 0.8rem;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 0.95rem;
+        transition:
+          transform 0.2s,
+          background-color 0.2s;
+        border: 1px solid var(--border-color);
+      }
 
-        .btn:hover {
-            background-color: var(--accent-blue);
-            color: var(--bg-color);
-            font-weight: 600;
-            transform: translateY(-2px);
-        }
+      .btn:hover {
+        background-color: var(--accent-blue);
+        color: var(--bg-color);
+        font-weight: 600;
+        transform: translateY(-2px);
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="portfolio-container">
-        
-        <div class="header">
-            <div class="avatar">RS</div>
-            <h1>Rajnish Singh</h1>
-            <div class="title-sub">B.Tech Computer Science & Engineering Student</div>
-            <div class="location">📍 Greater Noida, India</div>
+      <div class="header">
+        <div class="avatar">RS</div>
+        <h1>Rajnish Singh</h1>
+        <div class="title-sub">
+          B.Tech Computer Science & Engineering Student
         </div>
+        <div class="location">📍 Greater Noida, India</div>
+      </div>
 
-        <h2>About Me</h2>
-        <p>
-            I am an analytical and research-driven Computer Science student at <strong>Gautam Buddha University</strong> (Current SGPA: 7.04/10). I have hands-on experience developing AI-driven workflows, statistical models, real-time data streaming architectures, and behavioral pattern recognition systems. I'm highly motivated by applications of intelligent engineering to solve intricate, data-intensive challenges.
+      <h2>About Me</h2>
+      <p>
+        I am an analytical and research-driven Computer Science student at
+        <strong>Gautam Buddha University</strong> (Current SGPA: 7.04/10). I
+        have hands-on experience developing AI-driven workflows, statistical
+        models, real-time data streaming architectures, and behavioral pattern
+        recognition systems. I'm highly motivated by applications of intelligent
+        engineering to solve intricate, data-intensive challenges.
+      </p>
+
+      <h2>Skills & Tools</h2>
+      <p>
+        <strong>Languages & Frameworks:</strong> Python (Pandas, NumPy,
+        Scikit-learn), React 19, FastAPI, Flask, TensorFlow, PyTorch
+      </p>
+      <p>
+        <strong>Research & Analysis:</strong> Statistical Modeling, Time-Series
+        Forecasting, Behavioral Analysis, Vector-Context Retrieval (Qdrant)
+      </p>
+      <p>
+        <strong>Cloud, Quantum & Infrastructure:</strong> AWS Cloud, IBM Qiskit,
+        PostgreSQL/TimescaleDB, Kafka, Redis, Git/GitHub
+      </p>
+
+      <h2>Featured Technical Projects</h2>
+
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">QuantEdge AI Engine</span>
+          <span class="item-tech">FastAPI | LSTM | Redis | TimescaleDB</span>
+        </div>
+        <ul>
+          <li>
+            Architected a production-grade trading analytics platform deploying
+            hybrid ML models (XGBoost + LSTM) for price trajectory tracking.
+          </li>
+          <li>
+            Designed a Redis-cached real-time WebSocket streaming layer
+            executing data events with sub-5ms latencies.
+          </li>
+          <li>
+            Integrated LangChain/Claude API wrappers for dynamic,
+            natural-language generation of institutional research reports.
+          </li>
+        </ul>
+      </div>
+
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">HealthOS – Hospital Stress Heatmap</span>
+          <span class="item-tech">React 19 | Flask | Predictive Analytics</span>
+        </div>
+        <ul>
+          <li>
+            Built a live operational infrastructure mapping composite
+            multi-variable stress limits across 13 distinct clinic zones every
+            10 seconds.
+          </li>
+          <li>
+            Engineered custom cascading propagation calculations and prioritized
+            metrics to deliver predictive analytics for high-volume units.
+          </li>
+          <li>
+            Implemented an explicit natural-language AI insight layer for
+            non-technical operations tracking with total HIPAA alignment.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Fellowships & Global Exposure</h2>
+      <div class="tag-container">
+        <span class="tag">💡 IBM Qiskit Advocate</span>
+        <span class="tag">📈 McKinsey Forward Program</span>
+        <span class="tag"
+          >⚡ GirlScript Summer of Code '26 (AI/Agents Track)</span
+        >
+        <span class="tag"
+          >🧬 IISER Bhopal - AI in Mental Health Coursework</span
+        >
+        <span class="tag"
+          >🎯 NIT Rourkela - Cognitive Engineering & Usability</span
+        >
+        <span class="tag">☁️ AWS Cloud Club Member (GBU)</span>
+      </div>
+
+      <h2>Field Experience</h2>
+      <div class="item-card">
+        <div class="item-header">
+          <span class="item-title">District Magistrate Office, GB Nagar</span>
+          <span class="item-date">Nov 2025</span>
+        </div>
+        <p style="margin: 0; padding-left: 0.5rem">
+          Gained field exposure through a collaborative civic data management
+          internship. Assisted with tracking updates, validation, and
+          administrative field reporting with local program operations officers.
         </p>
+      </div>
 
-        <h2>Skills & Tools</h2>
-        <p><strong>Languages & Frameworks:</strong> Python (Pandas, NumPy, Scikit-learn), React 19, FastAPI, Flask, TensorFlow, PyTorch</p>
-        <p><strong>Research & Analysis:</strong> Statistical Modeling, Time-Series Forecasting, Behavioral Analysis, Vector-Context Retrieval (Qdrant)</p>
-        <p><strong>Cloud, Quantum & Infrastructure:</strong> AWS Cloud, IBM Qiskit, PostgreSQL/TimescaleDB, Kafka, Redis, Git/GitHub</p>
-
-        <h2>Featured Technical Projects</h2>
-        
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-title">QuantEdge AI Engine</span>
-                <span class="item-tech">FastAPI | LSTM | Redis | TimescaleDB</span>
-            </div>
-            <ul>
-                <li>Architected a production-grade trading analytics platform deploying hybrid ML models (XGBoost + LSTM) for price trajectory tracking.</li>
-                <li>Designed a Redis-cached real-time WebSocket streaming layer executing data events with sub-5ms latencies.</li>
-                <li>Integrated LangChain/Claude API wrappers for dynamic, natural-language generation of institutional research reports.</li>
-            </ul>
-        </div>
-
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-title">HealthOS – Hospital Stress Heatmap</span>
-                <span class="item-tech">React 19 | Flask | Predictive Analytics</span>
-            </div>
-            <ul>
-                <li>Built a live operational infrastructure mapping composite multi-variable stress limits across 13 distinct clinic zones every 10 seconds.</li>
-                <li>Engineered custom cascading propagation calculations and prioritized metrics to deliver predictive analytics for high-volume units.</li>
-                <li>Implemented an explicit natural-language AI insight layer for non-technical operations tracking with total HIPAA alignment.</li>
-            </ul>
-        </div>
-
-        <h2>Fellowships & Global Exposure</h2>
-        <div class="tag-container">
-            <span class="tag">💡 IBM Qiskit Advocate</span>
-            <span class="tag">📈 McKinsey Forward Program</span>
-            <span class="tag">⚡ GirlScript Summer of Code '26 (AI/Agents Track)</span>
-            <span class="tag">🧬 IISER Bhopal - AI in Mental Health Coursework</span>
-            <span class="tag">🎯 NIT Rourkela - Cognitive Engineering & Usability</span>
-            <span class="tag">☁️ AWS Cloud Club Member (GBU)</span>
-        </div>
-
-        <h2>Field Experience</h2>
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-title">District Magistrate Office, GB Nagar</span>
-                <span class="item-date">Nov 2025</span>
-            </div>
-            <p style="margin: 0; padding-left: 0.5rem;">
-                Gained field exposure through a collaborative civic data management internship. Assisted with tracking updates, validation, and administrative field reporting with local program operations officers.
-            </p>
-        </div>
-
-        <div class="links-flex">
-            <a href="https://github.com/givemehat" target="_blank" class="btn">🚀 GitHub Portfolio</a>
-            <a href="https://linkedin.com/in/rajnish-singh-a9a61022a" target="_blank" class="btn">👔 LinkedIn Connect</a>
-            <a href="mailto:rajnisihsingh@gmail.com" class="btn">✉️ Direct Email</a>
-        </div>
-
+      <div class="links-flex">
+        <a href="https://github.com/givemehat" target="_blank" class="btn"
+          >🚀 GitHub Portfolio</a
+        >
+        <a
+          href="https://linkedin.com/in/rajnish-singh-a9a61022a"
+          target="_blank"
+          class="btn"
+          >👔 LinkedIn Connect</a
+        >
+        <a href="mailto:rajnisihsingh@gmail.com" class="btn">✉️ Direct Email</a>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
